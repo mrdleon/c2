@@ -1,5 +1,3 @@
-// src/components/Features.js
-
 import React from 'react';
 import Image from 'next/image';
 import styles from '@/styles/Features.module.css';
@@ -10,12 +8,10 @@ const Features = () => {
       <section id="features" className={styles.featuresSection}>
         <div className={styles.contentContainer}>
 
-          {/* ===== BAGIAN ATAS: GABUNG SEKARANG ===== */}
           <div className={styles.topBlock}>
-            {/* KODE BARU: Kontainer untuk banner produk dan logo Halal */}
             <div className={styles.bannerContainer}>
               <Image
-                src="/images/daun.png" // GANTI DENGAN GAMBAR BANNER ANDA
+                src="/images/daun.png" 
                 alt="Varian Produk Box Crepes"
                 width={700}
                 height={300}
@@ -23,7 +19,7 @@ const Features = () => {
               />
               <div className={styles.halalLogo}>
                 <Image 
-                  src="/images/halal-seeklogo.png" // Ganti dengan path logo Halal
+                  src="/images/halal-seeklogo.png"
                   alt="Logo Halal"
                   width={80}
                   height={130}
@@ -37,11 +33,10 @@ const Features = () => {
             </p>
           </div>
 
-          {/* ===== BAGIAN BAWAH: DEDIKASI KAMI ===== */}
           <div className={styles.bottomBlock}>
             <div className={styles.productImage}>
               <Image
-                src="/images/anggur.png" // Ganti dengan foto produk unggulan
+                src="/images/anggur.png"
                 alt="Produk Unggulan Box Crepes"
                 width={350}
                 height={350}
@@ -60,7 +55,6 @@ const Features = () => {
       </section>
 
       <div className={styles.lowerContentWrapper}>
-        {/* BAGIAN 3: BEBAS ROYALTY */}
         <div className={styles.royaltyBlock}>
           <div className={styles.textContent}>
             <h2 className={styles.headlineDark}>BEBAS ROYALTY</h2>
@@ -73,11 +67,10 @@ const Features = () => {
           </div>
         </div>
 
-        {/* BAGIAN 4: OUR PRODUCT */}
         <div className={styles.productBlock}>
           <div className={styles.productImage}>
             <Image
-              src="/images/strawbery.png" // Ganti dengan foto produk unggulan
+              src="/images/strawbery.png" 
               alt="Produk Unggulan Box Crepes"
               width={350}
               height={450}

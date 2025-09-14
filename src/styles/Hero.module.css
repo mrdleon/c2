@@ -1,12 +1,10 @@
-/* src/styles/Hero.module.css */
-
 .heroSection {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background-color: var(--bg-main); /* Menggunakan background utama yang baru */
+  background-color: var(--bg-main); 
   position: relative;
   overflow: visible;
 }
@@ -36,37 +34,36 @@
 .imageHexagonWrapper {
   width: 400px; /* Sesuaikan ukuran keseluruhan hexagon */
   height: 400px; /* Sesuaikan ukuran keseluruhan hexagon */
-  background-color: #f0f0f0; /* Warna latar belakang di balik crêpes, bisa diatur */
+  background-color: #f0f0f0; 
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Penting agar gambar terpotong sesuai bentuk */
+  overflow: hidden; 
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Bayangan */
 }
 
 .imageHexagonWrapper img {
   width: 100%; /* Gambar mengisi seluruh wrapper */
   height: 100%; /* Gambar mengisi seluruh wrapper */
-  object-fit: cover; /* Penting agar gambar tetap proporsional dan mengisi */
+  object-fit: cover; 
 }
 
-/* Modifikasi Logo: Sekarang Bulat dan di Kiri Serong */
 .logoHexagon {
   position: absolute;
-  top: 100px;   /* Atur posisi Y, sesuaikan agar pas di "serong kiri" */
-  left: 180px;  /* Atur posisi X, agar dekat dengan sudut kiri */
+  top: 100px;   /* Atur posisi Y*/
+  left: 180px;  /* Atur posisi X*/
   transform: translate(-50%, -50%); /* Geser logo ke kiri-atas agar pusatnya di (0,0) relatif ke posisi */
   width: 120px; /* Ukuran bulat logo */
   height: 120px;
-  background-color: white; /* Latar belakang logo */
-  border-radius: 50%; /* Membuat bentuk bulat sempurna */
+  background-color: white; 
+  border-radius: 50%; 
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2; /* Pastikan logo di atas gambar crêpes */
+  z-index: 2; 
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  border: 4px solid var(--primary-accent); /* Border warna aksen */
+  border: 4px solid var(--primary-accent); 
 }
 
 .logoHexagon img {
@@ -85,7 +82,7 @@
   font-family:'Poppins', sans-serif;
   font-size: 4rem;
   line-height: 1.1;
-  color: var(--text-dark); /* Warna teks jadi abu tua */
+  color: var(--text-dark); 
   margin-bottom: 1rem;
 }
 
@@ -112,8 +109,8 @@
 }
 
 .ctaButton {
-  background-color: var(--primary-purple); /* Tombol jadi ungu */
-  color: var(--text-light); /* Teks tombol putih */
+  background-color: var(--primary-purple); 
+  color: var(--text-light); 
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 1.1rem;
@@ -145,10 +142,10 @@
 
 .socialIcon i {
   font-size: 1.2rem;
-  color: #E1306C; /* Biarkan warna IG atau ganti ke hijau tua var(--bg-dark-green) */
+  color: #E1306C; 
 }
 
-/* Media Query tidak perlu banyak diubah, hanya warna yang otomatis mengikuti variabel */
+/* Media Query */
 @media (max-width: 768px) {
   .heroSection {
     min-height: auto;
@@ -157,5 +154,5 @@
   .container {
     flex-direction: column;
   }
-  /* ... sisa media query ... */
+
 }

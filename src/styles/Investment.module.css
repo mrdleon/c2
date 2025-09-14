@@ -1,9 +1,7 @@
-/* src/styles/Investment.module.css */
-
 .investmentSection {
   padding: 5rem 1rem;
   background-color: var(--bg-main);
-  font-family: var(--font-nunito); /* Terapkan font Nunito di sini */
+  font-family: var(--font-nunito); 
 }
 
 .container {

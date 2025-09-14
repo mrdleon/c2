@@ -1,20 +1,16 @@
-/* src/styles/InvestmentV2.module.css */
-
 .investmentSection {
-  padding: 2rem 1rem 5rem 1rem; /* Beri jarak dari section sebelumnya dan sesudahnya */
+  padding: 2rem 1rem 5rem 1rem; 
   background-color: var(--bg-main);
 }
 
 .container {
-  max-width: 800px; /* Samakan dengan lebar tabel manual agar mudah dibandingkan */
+  max-width: 800px; 
   margin: 0 auto;
 }
 
 .imageWrapper {
   width: 100%;
-  border-radius: 20px; /* Sudut gambar dibuat tumpul */
-  overflow: hidden; /* Penting agar gambar mengikuti border-radius */
-  
-  /* Bayangan ungu lembut yang sama dengan gambar tim */
+  border-radius: 20px; 
+  overflow: hidden; 
   box-shadow: 0px 15px 40px -10px rgba(138, 43, 226, 0.25);
 }

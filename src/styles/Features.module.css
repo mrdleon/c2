@@ -1,5 +1,3 @@
-/* src/styles/Features.module.css */
-
 .featuresSectionWrapper {
   padding: 2rem 1rem;
   background-color: var(--bg-main);
@@ -8,26 +6,24 @@
   max-width: 800px;
   margin: 0 auto;
   min-height: 120vh;
-  padding: 0; /* Padding diatur oleh contentContainer */
+  padding: 0; 
   background-color: var(--primary-purple);
   position: relative;
   box-shadow: 0 20px 50px -20px rgba(138, 43, 226, 0.4);
   border-radius: 0 0 20% 20%;
-  display: flex; /* Tambahkan ini */
-  align-items: center; /* Tambahkan ini */
+  display: flex; 
+  align-items: center; 
 }
-
-/* ===== PERBAIKAN UTAMA: Kontainer, Warna Font & Ukuran Headline ===== */
 
 .contentContainer {
   width: 100%;
   padding: 4rem 3rem;
-  color: var(--text-light); /* Menjadikan semua teks di dalam kontainer berwarna putih */
+  color: var(--text-light); 
 }
 
 .headline {
   font-family: 'Poppins', sans-serif;
-  font-size: 2.5rem; /* Headline diperbesar */
+  font-size: 2.5rem; 
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -36,23 +32,22 @@
 .subheading {
   font-size: 1.1rem;
   line-height: 1.7;
-  opacity: 0.9; /* Sedikit transparan agar tidak terlalu silau */
+  opacity: 0.9; 
 }
 
-/* ===== GAYA UNTUK BLOK KONTEN ===== */
 .topBlock {
   text-align: center;
   margin-bottom: 5rem;
 }
 
-/* ===== KODE BARU DIMULAI DI SINI ===== */
+
 .bannerContainer {
-  position: relative; /* Wajib untuk memposisikan logo Halal */
+  position: relative; 
   width: 100%;
-  max-width: 600px; /* Batasi lebar banner agar tidak terlalu besar */
-  margin: 0 auto; /* Tengahkan banner */
-  line-height: 0; /* Menghilangkan spasi aneh di bawah gambar */
-  margin-bottom: 2.5rem; /* Jarak dari banner ke teks di bawahnya */
+  max-width: 600px; 
+  margin: 0 auto; 
+  line-height: 0; 
+  margin-bottom: 2.5rem; 
 }
 
 .halalLogo {
@@ -61,7 +56,7 @@
   right: -40px;
   z-index: 2;
   padding: 5px;
-  backdrop-filter: blur(4px); /* Efek glassmorphism */
+  backdrop-filter: blur(4px); 
 }
 
 .bottomBlock {
@@ -76,7 +71,6 @@
   flex-shrink: 0;
 }
 
-/* Style untuk .textContent yang sebelumnya hilang */
 .textContent {
   flex-basis: 50%; /* Mengambil 50% lebar */
 }
@@ -88,14 +82,13 @@
   padding: 4rem 1rem;
 }
 
-/* Membuat style terpisah untuk teks gelap */
 .headlineDark {
   font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1rem;
-  color: var(--text-dark); /* Warna teks gelap */
+  color: var(--text-dark); 
 }
 
 .subheadingDark {

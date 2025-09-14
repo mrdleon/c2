@@ -1,14 +1,11 @@
-// src/components/Call.js
-
 import React from 'react';
 import Image from 'next/image';
-import styles from '@/styles/Call.module.css'; // Menggunakan file CSS yang baru
+import styles from '@/styles/Call.module.css';
 
 const Call = () => {
   return (
     <section id="call" className={styles.callSection}>
       <div className={styles.container}>
-        {/* Kolom Kiri: Gambar Produk dan Logo Bulat */}
         <div className={styles.productDisplay}>
           <div className={styles.brandLogoCircle}>
             <Image
@@ -19,7 +16,7 @@ const Call = () => {
             />
           </div>
           <Image
-            src="/images/anggur.png" // Ganti dengan gambar produk, misal Matcha Crepes
+            src="/images/anggur.png"
             alt="Matcha Crepes"
             width={400}
             height={500}
@@ -27,11 +24,10 @@ const Call = () => {
           />
         </div>
 
-        {/* Kolom Kanan: Teks dan Logo Halal */}
         <div className={styles.persuasionBlock}>
           <div className={styles.halalLogo}>
             <Image
-              src="/images/halal-seeklogo.png" // Ganti dengan path logo Halal
+              src="/images/halal-seeklogo.png"
               alt="Logo Halal"
               width={50}
               height={90}

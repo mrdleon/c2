@@ -1,5 +1,3 @@
-// src/components/AboutUs.js
-
 import React from 'react';
 import Image from 'next/image';
 import styles from '@/styles/AboutUs.module.css';
@@ -8,7 +6,7 @@ const AboutUs = () => {
   return (
     <section id="about" className={styles.aboutSection}>
 
-      {/* 1. DIV UNGU (PENGHUBUNG) */}
+      {/* 1. DIV UNGU */}
       <div className={styles.aboutHeader}>
         <div className={styles.headerContent}>
           <h2 className={styles.title}>TENTANG KAMI</h2>
@@ -22,13 +20,12 @@ const AboutUs = () => {
       <div className={styles.aboutContent}>
         <div className={styles.container}>
           <div className={styles.storyCard}>
-            {/* LOGO BARU DI SINI */}
             <div className={styles.crepesLogoAbsolute}>
               <Image 
-                src="/images/logocrepes.jpg" // Pastikan path ke logo Box Crepes Anda benar
+                src="/images/logocrepes.jpg" 
                 alt="Logo Box Crepes"
-                width={80} // Sesuaikan ukuran logo
-                height={80} // Sesuaikan ukuran logo
+                width={80} 
+                height={80}
               />
             </div>
 
@@ -39,8 +36,6 @@ const AboutUs = () => {
               Kami percaya bahwa makanan sederhana pun bisa memberikan kebahagiaan, selama dibuat dengan bahan berkualitas dan semangat pelayanan terbaik.
             </p>
           </div>
-          
-          {/* ===== KONTEN SELANJUTNYA ===== */}
 
           <div className={styles.halalSection}>
             <div className={styles.halalLogo}>

@@ -1,5 +1,3 @@
-// src/components/Investment.js
-
 import React from 'react';
 import Image from 'next/image';
 import styles from '@/styles/Investment.module.css';
@@ -14,11 +12,10 @@ const Investment = () => {
         </header>
 
         <div className={styles.tableWrapper}>
-          {/* DATA PENJUALAN */}
           <div className={styles.dataBlock}>
             <div className={styles.blockHeader}><h2>DATA PENJUALAN</h2></div>
             <div className={styles.tableHeaderRow}>
-              <span></span> {/* Kolom kosong untuk deskripsi */}
+              <span></span>
               <span>REALISTIS</span>
               <span>OPTIMIS</span>
             </div>
@@ -30,7 +27,6 @@ const Investment = () => {
             <div className={styles.totalRow}><span className={styles.item}>TOTAL</span> <span className={styles.value}>Rp. 7.500.000</span> <span className={styles.value}>Rp. 15.000.000</span></div>
           </div>
 
-          {/* DATA OPERASIONAL */}
           <div className={styles.dataBlock}>
             <div className={styles.blockHeader}><h2>DATA OPERASIONAL</h2></div>
             <div className={styles.tableHeaderRow}>
@@ -46,7 +42,6 @@ const Investment = () => {
             <div className={styles.totalRow}><span className={styles.item}>TOTAL</span> <span className={styles.value}>Rp. 2.100.000</span> <span className={styles.value}>Rp. 2.100.000</span></div>
           </div>
 
-          {/* KESIMPULAN */}
           <div className={styles.dataBlock}>
             <div className={styles.blockHeader}><h2>KESIMPULAN</h2></div>
             <div className={styles.tableHeaderRow}>

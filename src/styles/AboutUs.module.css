@@ -1,10 +1,7 @@
-/* src/styles/AboutUs.module.css */
-
 .aboutSection {
   position: relative;
 }
 
-/* DIV PENGHUBUNG BERWARNA UNGU */
 .aboutHeader {
   color: var(--text-light);
   position: relative;
@@ -15,13 +12,13 @@
     rgba(138, 43, 226, 0),
     var(--primary-purple) 50px
   );
-  margin-top: -10px; /* Kembali ke -50px untuk memberi sedikit ruang dari Hero */
+  margin-top: -10px;
 }
 
 .headerContent {
   max-width: 800px;
   margin: 0 auto;
-  padding-top: 70px; /* Sesuaikan padding-top ini */
+  padding-top: 70px; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,7 +50,7 @@
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -61,33 +58,33 @@
   background-color: #FFFFFF;
   color: var(--text-dark);
   padding: 2.5rem;
-  padding-top: 4.5rem; /* Tambah padding atas untuk memberi ruang logo */
+  padding-top: 4.5rem; 
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  margin-top: -150px; /* Pertahankan ini agar naik ke area ungu */
+  margin-top: -150px; 
   position: relative;
   z-index: 2;
 }
 
-/* STYLE BARU UNTUK LOGO DI ATAS KARTU */
+
 .crepesLogoAbsolute {
   position: absolute;
-  top: -40px; /* Posisikan di atas kartu, sesuaikan jika perlu */
+  top: -40px; 
   left: 50%;
   transform: translateX(-50%);
-  background-color: white; /* Latar belakang logo */
-  padding: 5px; /* Sedikit padding di sekitar logo */
-  border-radius: 50%; /* Jika logo bulat */
+  background-color: white;
+  padding: 5px; 
+  border-radius: 50%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  z-index: 4; /* Pastikan logo berada di atas semuanya */
+  z-index: 4; 
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 4px solid var(--primary-purple); /* Border ungu */
+  border: 4px solid var(--primary-purple); 
 }
 
 .crepesLogoAbsolute img {
-  border-radius: 50%; /* Agar gambar logo juga bulat */
+  border-radius: 50%;
 }
 
 
@@ -100,7 +97,6 @@
   margin-bottom: 0;
 }
 
-/* Style untuk bagian sertifikasi halal */
 .halalSection {
   display: flex;
   align-items: center;
@@ -140,18 +136,14 @@
   color: var(--text-dark);
 }
 
-/* ===== MODIFIKASI TOTAL UNTUK GAYA FOTO TIM ===== */
+
 .teamImageContainer {
   position: relative;
   width: 100%;
-  height: 450px; /* Anda bisa sesuaikan tingginya */
-  border-radius: 20px; /* Membuat sudut gambar tumpul */
-  overflow: hidden; /* Penting agar gambar mengikuti border-radius */
-  
-  /* Bayangan (shadow) yang lembut untuk efek 'mengambang' */
+  height: 450px;
+  border-radius: 20px; 
+  overflow: hidden; 
   box-shadow: 0px 15px 40px -10px rgba(138, 43, 226, 0.25);
-  
-  /* Sedikit jarak dari atas */
   margin-top: 2rem;
 }
 

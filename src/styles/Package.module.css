@@ -1,5 +1,3 @@
-/* src/styles/Package.module.css */
-
 .packageSection {
   padding: 5rem 1rem;
   background-color: var(--bg-main);
@@ -22,7 +20,7 @@
   color: var(--text-dark);
   line-height: 1.1;
   display: inline-block; /* Membuat 'kotak' judul pas dengan lebar teksnya */
-  padding-bottom: 1rem; /* Jarak dari teks ke garis */
+  padding-bottom: 1rem;
   border-bottom: 3px dashed var(--primary-purple); /* Garis putus-putus ungu */
   padding-left: 1rem;
   padding-right: 1rem;
@@ -31,7 +29,7 @@
 .imageWrapper {
   width: 100%;
   filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
-  margin-top: -12rem; /* Mengangkat gambar ke atas */
+  margin-top: -12rem;
 }
 
 @media (max-width: 768px) {

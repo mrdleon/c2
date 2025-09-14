@@ -1,5 +1,3 @@
-// src/components/Package.js
-
 import React from 'react';
 import Image from 'next/image';
 import styles from '@/styles/Package.module.css';
@@ -12,7 +10,6 @@ const Package = () => {
           <h2 className={styles.title}>
             Promo <br /> Paket Portable
           </h2>
-          {/* <div className={styles.dashedLine}></div> <-- HAPUS BARIS INI */}
         </div>
         
         <div className={styles.imageWrapper}>
