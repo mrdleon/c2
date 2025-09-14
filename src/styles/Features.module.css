@@ -1,0 +1,187 @@
+/* src/styles/Features.module.css */
+
+.featuresSectionWrapper {
+  padding: 2rem 1rem;
+  background-color: var(--bg-main);
+}
+.featuresSection {
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 120vh;
+  padding: 0; /* Padding diatur oleh contentContainer */
+  background-color: var(--primary-purple);
+  position: relative;
+  box-shadow: 0 20px 50px -20px rgba(138, 43, 226, 0.4);
+  border-radius: 0 0 20% 20%;
+  display: flex; /* Tambahkan ini */
+  align-items: center; /* Tambahkan ini */
+}
+
+/* ===== PERBAIKAN UTAMA: Kontainer, Warna Font & Ukuran Headline ===== */
+
+.contentContainer {
+  width: 100%;
+  padding: 4rem 3rem;
+  color: var(--text-light); /* Menjadikan semua teks di dalam kontainer berwarna putih */
+}
+
+.headline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem; /* Headline diperbesar */
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.subheading {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.9; /* Sedikit transparan agar tidak terlalu silau */
+}
+
+/* ===== GAYA UNTUK BLOK KONTEN ===== */
+.topBlock {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+/* ===== KODE BARU DIMULAI DI SINI ===== */
+.bannerContainer {
+  position: relative; /* Wajib untuk memposisikan logo Halal */
+  width: 100%;
+  max-width: 600px; /* Batasi lebar banner agar tidak terlalu besar */
+  margin: 0 auto; /* Tengahkan banner */
+  line-height: 0; /* Menghilangkan spasi aneh di bawah gambar */
+  margin-bottom: 2.5rem; /* Jarak dari banner ke teks di bawahnya */
+}
+
+.halalLogo {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  z-index: 2;
+  padding: 5px;
+  backdrop-filter: blur(4px); /* Efek glassmorphism */
+}
+
+.bottomBlock {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  text-align: left;
+}
+
+.productImage {
+  flex-basis: 50%; /* Mengambil 50% lebar */
+  flex-shrink: 0;
+}
+
+/* Style untuk .textContent yang sebelumnya hilang */
+.textContent {
+  flex-basis: 50%; /* Mengambil 50% lebar */
+}
+
+/* baru */
+.lowerContentWrapper {
+  max-width: 900px; /* Samakan dengan lebar banner */
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+/* Membuat style terpisah untuk teks gelap */
+.headlineDark {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--text-dark); /* Warna teks gelap */
+}
+
+.subheadingDark {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-dark);
+}
+
+.royaltyBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  text-align: left;
+  margin-bottom: 5rem;
+}
+
+.productBlock {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  text-align: left;
+}
+
+.productBlock .productImage {
+  position: relative;
+  line-height: 0;
+  flex-basis: 50%;
+  flex-shrink: 0;
+}
+
+.priceBubble {
+  position: absolute;
+  bottom: 20px;
+  left: -25px;
+  width: 100px;
+  height: 100px;
+  background-color: var(--bg-main);
+  color: var(--primary-purple);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  border: 4px solid var(--primary-purple);
+  z-index: 2;
+}
+.priceBubble span {
+  font-size: 1.8rem;
+}
+
+.orderButton {
+  background-color: var(--primary-purple);
+  color: var(--text-light);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  font-size: 2rem;
+  font-weight: 300;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 5px 15px rgba(138, 43, 226, 0.2);
+}
+.orderButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(138, 43, 226, 0.3);
+}
+
+/* ===== MEDIA QUERY UNTUK MOBILE ===== */
+@media (max-width: 768px) {
+  .featuresSection {
+    min-height: auto;
+  }
+  .contentContainer {
+    padding: 3rem 1.5rem;
+  }
+  .headline {
+    font-size: 2.5rem;
+  }
+  .bottomBlock {
+    flex-direction: column;
+    text-align: center;
+  }
+}

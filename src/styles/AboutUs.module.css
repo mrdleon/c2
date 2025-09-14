@@ -1,0 +1,187 @@
+/* src/styles/AboutUs.module.css */
+
+.aboutSection {
+  position: relative;
+}
+
+/* DIV PENGHUBUNG BERWARNA UNGU */
+.aboutHeader {
+  color: var(--text-light);
+  position: relative;
+  z-index: 1;
+  padding: 6rem 1rem;
+  background: linear-gradient(
+    to bottom, 
+    rgba(138, 43, 226, 0),
+    var(--primary-purple) 50px
+  );
+  margin-top: -10px; /* Kembali ke -50px untuk memberi sedikit ruang dari Hero */
+}
+
+.headerContent {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 70px; /* Sesuaikan padding-top ini */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
+  padding-bottom: 3.5rem;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.brandInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 500;
+}
+
+/* Area konten utama */
+.aboutContent {
+  background-color: var(--bg-main);
+  padding: 3rem 1rem 5rem 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.storyCard {
+  background-color: #FFFFFF;
+  color: var(--text-dark);
+  padding: 2.5rem;
+  padding-top: 4.5rem; /* Tambah padding atas untuk memberi ruang logo */
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  margin-top: -150px; /* Pertahankan ini agar naik ke area ungu */
+  position: relative;
+  z-index: 2;
+}
+
+/* STYLE BARU UNTUK LOGO DI ATAS KARTU */
+.crepesLogoAbsolute {
+  position: absolute;
+  top: -40px; /* Posisikan di atas kartu, sesuaikan jika perlu */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white; /* Latar belakang logo */
+  padding: 5px; /* Sedikit padding di sekitar logo */
+  border-radius: 50%; /* Jika logo bulat */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 4; /* Pastikan logo berada di atas semuanya */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid var(--primary-purple); /* Border ungu */
+}
+
+.crepesLogoAbsolute img {
+  border-radius: 50%; /* Agar gambar logo juga bulat */
+}
+
+
+.storyCard p {
+  margin: 0 0 1rem 0;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+.storyCard p:last-child {
+  margin-bottom: 0;
+}
+
+/* Style untuk bagian sertifikasi halal */
+.halalSection {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+  color: var(--text-dark);
+}
+
+.halalLogo {
+  flex-shrink: 0;
+}
+
+.halalInfo {
+  line-height: 1.7;
+}
+
+.certificateDetails {
+  margin-top: 1rem;
+}
+.certificateDetails p {
+  margin: 0.5rem 0;
+}
+.highlight {
+  background-color: rgba(138, 43, 226, 0.1);
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.commitmentText {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto 4rem auto;
+  color: var(--text-dark);
+}
+
+/* ===== MODIFIKASI TOTAL UNTUK GAYA FOTO TIM ===== */
+.teamImageContainer {
+  position: relative;
+  width: 100%;
+  height: 450px; /* Anda bisa sesuaikan tingginya */
+  border-radius: 20px; /* Membuat sudut gambar tumpul */
+  overflow: hidden; /* Penting agar gambar mengikuti border-radius */
+  
+  /* Bayangan (shadow) yang lembut untuk efek 'mengambang' */
+  box-shadow: 0px 15px 40px -10px rgba(138, 43, 226, 0.25);
+  
+  /* Sedikit jarak dari atas */
+  margin-top: 2rem;
+}
+
+.teamImage {
+  z-index: 0;
+}
+
+/* Media Query untuk Mobile */
+@media (max-width: 640px) {
+  .headerContent {
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 80px;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .crepesLogoAbsolute {
+    width: 60px;
+    height: 60px;
+    top: -30px;
+  }
+  .crepesLogoAbsolute img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .halalSection {
+    flex-direction: column;
+    text-align: center;
+  }
+}

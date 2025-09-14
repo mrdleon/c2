@@ -1,0 +1,161 @@
+/* src/styles/Hero.module.css */
+
+.heroSection {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--bg-main); /* Menggunakan background utama yang baru */
+  position: relative;
+  overflow: visible;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.imageAndLogoContainer {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-left: 60px;
+}
+
+/* Styling Hexagon (Segi Enam) */
+.imageHexagonWrapper {
+  width: 400px; /* Sesuaikan ukuran keseluruhan hexagon */
+  height: 400px; /* Sesuaikan ukuran keseluruhan hexagon */
+  background-color: #f0f0f0; /* Warna latar belakang di balik crêpes, bisa diatur */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Penting agar gambar terpotong sesuai bentuk */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Bayangan */
+}
+
+.imageHexagonWrapper img {
+  width: 100%; /* Gambar mengisi seluruh wrapper */
+  height: 100%; /* Gambar mengisi seluruh wrapper */
+  object-fit: cover; /* Penting agar gambar tetap proporsional dan mengisi */
+}
+
+/* Modifikasi Logo: Sekarang Bulat dan di Kiri Serong */
+.logoHexagon {
+  position: absolute;
+  top: 100px;   /* Atur posisi Y, sesuaikan agar pas di "serong kiri" */
+  left: 180px;  /* Atur posisi X, agar dekat dengan sudut kiri */
+  transform: translate(-50%, -50%); /* Geser logo ke kiri-atas agar pusatnya di (0,0) relatif ke posisi */
+  width: 120px; /* Ukuran bulat logo */
+  height: 120px;
+  background-color: white; /* Latar belakang logo */
+  border-radius: 50%; /* Membuat bentuk bulat sempurna */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; /* Pastikan logo di atas gambar crêpes */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border: 4px solid var(--primary-accent); /* Border warna aksen */
+}
+
+.logoHexagon img {
+  width: 70%; /* Ukuran logo di dalam bulat */
+  height: 70%; /* Ukuran logo di dalam bulat */
+  object-fit: contain;
+}
+
+.textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.headline {
+  font-family:'Poppins', sans-serif;
+  font-size: 4rem;
+  line-height: 1.1;
+  color: var(--text-dark); /* Warna teks jadi abu tua */
+  margin-bottom: 1rem;
+}
+
+.slogan {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+.ctaBlock {
+  background-color: white;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.ctaBlock h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.75rem;
+  margin-top: 0;
+  color: var(--text-dark);
+}
+
+.ctaButton {
+  background-color: var(--primary-purple); /* Tombol jadi ungu */
+  color: var(--text-light); /* Teks tombol putih */
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.ctaButton:hover {
+  transform: scale(1.05);
+}
+
+.socials {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.socialIcon i {
+  font-size: 1.2rem;
+  color: #E1306C; /* Biarkan warna IG atau ganti ke hijau tua var(--bg-dark-green) */
+}
+
+/* Media Query tidak perlu banyak diubah, hanya warna yang otomatis mengikuti variabel */
+@media (max-width: 768px) {
+  .heroSection {
+    min-height: auto;
+    padding: 4rem 1rem;
+  }
+  .container {
+    flex-direction: column;
+  }
+  /* ... sisa media query ... */
+}

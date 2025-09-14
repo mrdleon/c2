@@ -1,0 +1,41 @@
+/* src/styles/Package.module.css */
+
+.packageSection {
+  padding: 5rem 1rem;
+  background-color: var(--bg-main);
+}
+
+.container {
+  max-width: 550px; 
+  margin: 0 auto;
+  text-align: center;
+}
+
+.titleWrapper {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-family: var(--font-nunito);
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1.1;
+  display: inline-block; /* Membuat 'kotak' judul pas dengan lebar teksnya */
+  padding-bottom: 1rem; /* Jarak dari teks ke garis */
+  border-bottom: 3px dashed var(--primary-purple); /* Garis putus-putus ungu */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 0;
+}
+.imageWrapper {
+  width: 100%;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+  margin-top: -12rem; /* Mengangkat gambar ke atas */
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.2rem;
+  }
+}

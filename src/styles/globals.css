@@ -1,0 +1,36 @@
+/* src/styles/globals.css */
+
+:root {
+  /* ===== PALET WARNA BARU (UNGU) ===== */
+  --bg-main: #FDFCF9;         /* Warna background utama (putih tulang/krem) */
+  --primary-purple: #8A2BE2; /* Warna ungu utama dari gambar Anda */
+  --text-light: #FFFFFF;     /* Teks putih/terang */
+  --text-dark: #3D3D3D;     /* Teks gelap (abu-abu tua, lebih lembut dari hitam) */
+  
+  /* Font tetap sama */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Montserrat', sans-serif;
+  --font-nunito: 'Nunito', sans-serif; /* <-- TAMBAHKAN INI */
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--bg-main); /* Background default website */
+  color: var(--text-dark); /* Warna teks default */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  /* Kosong */
+}

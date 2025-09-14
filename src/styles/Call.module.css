@@ -1,0 +1,113 @@
+/* src/styles/Call.module.css */
+
+.callSection {
+  background-color: var(--bg-main); /* Latar belakang terang */
+  padding: 5rem 1rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Kiri: Gambar Produk dan Logo Bulat */
+.productDisplay {
+  flex: 1;
+  position: relative;
+  line-height: 0;
+}
+
+.brandLogoCircle {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  z-index: 2;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid var(--primary-purple);
+}
+
+.brandLogoCircle img {
+    border-radius: 50%;
+}
+
+.productDisplay > img { /* Target gambar produk saja */
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Kanan: Teks Persuasi dan Logo Halal */
+.persuasionBlock {
+  flex: 1.2; /* Dibuat sedikit lebih lebar dari gambar */
+  background-color: #EDE1FF; /* Warna ungu sangat muda */
+  border-radius: 20px;
+  padding: 3rem;
+  position: relative;
+  color: var(--text-dark); /* Teks gelap agar terbaca */
+  text-align: left;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.2);
+}
+
+.halalLogo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+.headline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+  color: var(--primary-purple);
+}
+
+.subheading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-top: 3rem;
+  color: var(--text-dark);
+}
+
+
+/* ===== MEDIA QUERY UNTUK MOBILE ===== */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .productDisplay {
+    margin-bottom: 4rem; /* Jarak antara gambar dan teks di mobile */
+    width: 80%; /* Sedikit lebih kecil agar tidak terlalu mepet */
+  }
+  .brandLogoCircle {
+    top: -20px;
+    left: -20px;
+    width: 80px;
+    height: 80px;
+  }
+  .persuasionBlock {
+    width: 100%;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+  }
+  .headline {
+    font-size: 1.5rem;
+  }
+  .subheading {
+    font-size: 1.2rem;
+  }
+}
